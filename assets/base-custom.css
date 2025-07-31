@@ -1,0 +1,9 @@
+.shopify-policy__title h1 {
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 750px) {
+ .shopify-policy__title h1 {
+   font-size: 3rem;
+  }
+}

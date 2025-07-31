@@ -1,0 +1,239 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        "h1 {font-size: 3rem;}",
+        "@media only screen and (min-width: 750px) {h1 {font-size: 4rem; }}"
+      ],
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_qqyFNx": {
+      "type": "rich-text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "slideshow_qHQaE4": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_gtwhVn": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/campaign_fv.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_gtwhVn"
+      ],
+      "settings": {
+        "layout": "grid",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "ブランドについてのスライドショー"
+      }
+    },
+    "image_with_text_PfBp3a": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_9gh3JP": {
+          "type": "heading",
+          "settings": {
+            "heading": "大阪POPUP注目商品！",
+            "heading_size": "h2"
+          }
+        },
+        "text_WQ6ARe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>POPUPでの注目商品のBarberは、恋人からの便りを手に\"首を長くして待つ男性\"とバーバー店主の1枚絵を背面にプリントしたアロハシャツ。<br/>鮮やかなレッドのボディに大胆なプリントが映えるこのシャツは、シンプルなフロントによって、モードやストリート、カジュアル問わず幅広い着こなしを楽しめる1着です。</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_9gh3JP",
+        "text_WQ6ARe"
+      ],
+      "custom_css": [
+        "h2 {background-color: #e04111; color: #fff; padding: 0.5rem 1rem;}",
+        ".image-with-text__media {border: none;}",
+        "img {width: 100%; height: auto; object-fit: cover;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/campaign_1.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 80,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_YET8dh": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_qwQNHC": {
+          "type": "heading",
+          "settings": {
+            "heading": "他にも人気商品を多数販売！",
+            "heading_size": "h2"
+          }
+        },
+        "text_qLrGqr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Barber以外にも、MAMA・PARADISE・JOURNEYなど、POPUPではコレクション内の商品を販売します！ アウターをはじめ各種グッズなど、過去に売り切れた商品の再販も！<br/>※先着10名様にはオリジナルのノベルティもご用意しております。</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qwQNHC",
+        "text_qLrGqr"
+      ],
+      "custom_css": [
+        "h2 {background-color: #e04111; color: #fff; padding: 0.5rem 1rem;}",
+        ".image-with-text__media {border: none;}",
+        "img {width: 100%; height: auto; object-fit: cover;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/campaign_2.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-add5b6e8-9a63-4f41-935a-0fc4d19a9945",
+        "color_scheme": "scheme-add5b6e8-9a63-4f41-935a-0fc4d19a9945",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_3cGRGT": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_4EytEY": {
+          "type": "heading",
+          "settings": {
+            "heading": "＜大阪POP UP 2days＞",
+            "heading_size": "h2"
+          }
+        },
+        "text_fGN7yz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>日時：2024年5月4日(土),5日(日)の13〜18時 場所：〒540-0002 大阪府大阪市中央区大阪城１−１</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_4EytEY",
+        "text_fGN7yz"
+      ],
+      "custom_css": [
+        "h2 {color: #e04111;}",
+        ".image-with-text__media {border: none;}",
+        "img {width: 100%; height: auto; object-fit: cover;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/campaign_3.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_KeRcLD": {
+      "type": "rich-text",
+      "blocks": {
+        "text_UA6fp6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>「新コレクションをいち早く手に入れたい！」</p><p>「実物を見てみたい！」</p><p>という方は、ぜひこの機会に</p><p>POUPにお越しください！</p>"
+          }
+        },
+        "text_ewnPG6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>＊このPUP UPは架空です</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_UA6fp6",
+        "text_ewnPG6"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_qqyFNx",
+    "slideshow_qHQaE4",
+    "image_with_text_PfBp3a",
+    "image_with_text_YET8dh",
+    "image_with_text_3cGRGT",
+    "rich_text_KeRcLD"
+  ]
+}

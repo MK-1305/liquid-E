@@ -1,0 +1,114 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_pA4fth": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_jirKFV": {
+          "type": "heading",
+          "settings": {
+            "heading": "店舗一覧",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jirKFV"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/shoplist_fv.png",
+        "image_overlay_opacity": 10,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "multicolumn_jgNXFG": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_VcWpWV": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/shop_tokyo.png",
+            "title": "",
+            "text": "",
+            "link_label": "東京本店",
+            "link": "shopify://pages/eanbe-demo-tokyo"
+          }
+        },
+        "column_c6JryH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/shop_osaka.png",
+            "title": "",
+            "text": "",
+            "link_label": "大阪店",
+            "link": "shopify://pages/eanbe-demo-osaka"
+          }
+        },
+        "column_7kjdca": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/shop_fukuoka.png",
+            "title": "",
+            "text": "",
+            "link_label": "福岡店",
+            "link": "shopify://pages/eanbe-demo-fukuoka"
+          }
+        }
+      },
+      "block_order": [
+        "column_VcWpWV",
+        "column_c6JryH",
+        "column_7kjdca"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 80,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        "h1 {font-size: 3rem;}",
+        "@media only screen and (min-width: 750px) {h1 {font-size: 4rem; }}"
+      ],
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "image_banner_pA4fth",
+    "multicolumn_jgNXFG",
+    "main"
+  ]
+}
