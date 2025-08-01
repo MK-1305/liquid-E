@@ -1,0 +1,111 @@
+{{ 'custom-news.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top_sp }}px;
+    padding-bottom: {{ section.settings.padding_bottom_sp }}px;
+  }
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top_pc }}px;
+      padding-bottom: {{ section.settings.padding_bottom_pc }}px;
+    }
+  }
+{%- endstyle -%}
+
+{% assign blog = section.settings.news_blog %}
+
+  <div class="color-{{ section.settings.color_scheme }} gradient">
+  {% comment %} // 元々ある幅のCSSを削除し、既存のpage-widthクラスを追加し幅を既存セクションと合わせた {% endcomment %}
+  <div class="page-width section-{{ section.id }}-padding c-news__inner">
+    <h2 class="c-news__title">{{ section.settings.title }}</h2>
+    <div class="c-news__card">
+      <div class="c-news__lists">
+          {% content_for 'blocks' %}
+      </div>
+      {% comment %} <div class="c-news__link">
+                                                                                        <a href="{{ blog.url }}">もっとみる</a>
+                                                            </div> {% endcomment %}
+      </div>
+    </div>
+  </div>
+
+
+  {% schema %}
+    {
+      "name": "NEWSテーマブロック",
+      "tag": "section",
+      "class": "section custom-news c-news",
+      "blocks": [
+        { 
+          "type": "@theme" 
+        },
+        {
+          "type": "@app" 
+        }
+      ],
+      "settings": [
+        {
+          "type": "color_scheme",
+          "id": "color_scheme",
+          "label": "t:sections.all.colors.label",
+          "default": "scheme-1"
+        },
+        {
+          "type": "header",
+          "content": "NEWSセクションの設定"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "見出し",
+          "default": "NEWS"
+        },
+        {
+          "type": "range",
+          "id": "padding_top_pc",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "label": "t:sections.all.padding.padding_top",
+          "default": 36
+        }, {
+          "type": "range",
+          "id": "padding_bottom_pc",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "label": "t:sections.all.padding.padding_bottom",
+          "default": 44
+        }, {
+          "type": "header",
+          "content": "モバイル上下の余白"
+        }, {
+          "type": "range",
+          "id": "padding_top_sp",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "label": "t:sections.all.padding.padding_top",
+          "default": 33
+        }, {
+          "type": "range",
+          "id": "padding_bottom_sp",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "label": "t:sections.all.padding.padding_bottom",
+          "default": 27
+        }
+      ],
+      "presets": [
+        {
+          "name": "Newsテーマブロック"
+        }
+      ]
+    }
+  {% endschema %}
