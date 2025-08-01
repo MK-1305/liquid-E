@@ -1,0 +1,84 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_3EbyCF": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_gdP9TW": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ page.metafields.custom.shop_name.value }}",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_gdP9TW"
+      ],
+      "settings": {
+        "image": "{{ page.metafields.custom.image.value }}",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        "h1 {font-size: 3rem;}",
+        "@media only screen and (min-width: 750px) {h1 {font-size: 4rem; }}"
+      ],
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_xrQjfA": {
+      "type": "rich-text",
+      "blocks": {
+        "button_ic8K4y": {
+          "type": "button",
+          "settings": {
+            "button_label": "店舗一覧へ戻る",
+            "button_link": "shopify://pages/shop-list",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "button_ic8K4y"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "image_banner_3EbyCF",
+    "main",
+    "rich_text_xrQjfA"
+  ]
+}

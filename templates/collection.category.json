@@ -1,0 +1,137 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_with_text_gPimpC": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_bMF9dc": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ collection.title }}",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_bMF9dc"
+      ],
+      "custom_css": [
+        "h2 {color: #00b0b0; font-family: Lobster; font-weight: 700; letter-spacing: 3.2px;}"
+      ],
+      "settings": {
+        "image": "{{ collection.image }}",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_UPBtTj": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_fARFtg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ALOHA_SHIRT-s.png",
+            "title": "",
+            "text": "",
+            "link_label": "アロハ半袖",
+            "link": "shopify://collections/aloha-shirt"
+          }
+        },
+        "column_4bhmyb": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Long_Sleeve_ALOHA_SHIRT-s.png",
+            "title": "",
+            "text": "",
+            "link_label": "アロハ長袖",
+            "link": "shopify://collections/aloha-shirt-ls"
+          }
+        },
+        "column_gYkeKM": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Outer_Pants-s.png",
+            "title": "",
+            "text": "",
+            "link_label": "アウター＆パンツ",
+            "link": "shopify://collections/outer-pants"
+          }
+        }
+      },
+      "block_order": [
+        "column_fARFtg",
+        "column_4bhmyb",
+        "column_gYkeKM"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_with_text_gPimpC",
+    "multicolumn_UPBtTj",
+    "banner",
+    "product-grid"
+  ]
+}

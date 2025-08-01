@@ -1,0 +1,233 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_i6QJD4": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_yprjhx": {
+          "type": "heading",
+          "settings": {
+            "heading": "About Eanbe",
+            "heading_size": "h1"
+          }
+        },
+        "text_3t7YWf": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>“いいあんべぇ”とは<br/>沖縄の方言で、<br/>気分がいい時に使う言葉。</h3><p><br/>お酒を飲むとき、旅行や遊びに行くとき、気になるあの子とデートのとき。<br/>アロハシャツ着たら、いつもより少しだけいい気分になれる気がした。<br/>Eanbeはそんなあなたに寄り添うブランド。<br/>あなたの毎日が“いいあんべぇ”で溢れることを願っています。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_yprjhx",
+        "text_3t7YWf"
+      ],
+      "custom_css": [
+        "h2 {letter-spacing: 3.2px;}",
+        "h3 {color: #e04111; text-align: center; font-size: 24px; line-height: 160%; letter-spacing: 2.6px;}",
+        "@media (max-width: 768px) {h3 {font-size: 2rem; } .rich-text__text {text-align: left; }}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_hGy6CM": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_rrxLf3": {
+          "type": "heading",
+          "settings": {
+            "heading": "\" TROPICAL CITY POP \"",
+            "heading_size": "h2"
+          }
+        },
+        "text_EGnXqw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Eanbeアロハの掲げるテーマは「トロピカルシティポップ」従来のアロハシャツのように南国で着られるだけでなく、 都会の景観・生活になじみながらも\"心と体に南国を感じられる\"アロハシャツ作りを目指しています。</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_rrxLf3",
+        "text_EGnXqw"
+      ],
+      "custom_css": [
+        ".image-with-text__media {border: none;}",
+        "img {width: 100%; height: auto; object-fit: cover;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/about_1s.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "image_with_text_rXEXNE": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_XhAjyG": {
+          "type": "heading",
+          "settings": {
+            "heading": "\" ABOUT EANBE ALOHA \"",
+            "heading_size": "h2"
+          }
+        },
+        "text_enE6DT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Eanbeのアロハシャツの生地は、デザインによって最も相性が良い素材を吟味し使用しています。 主な素材は、一般的なアロハシャツの生地としても多く使用されているレーヨンです。</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_XhAjyG",
+        "text_enE6DT"
+      ],
+      "custom_css": [
+        ".image-with-text__media {border: none;}",
+        "img {width: 100%; height: auto; object-fit: cover;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/about_2s.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
+    },
+    "image_banner_qigTmP": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/About_5s.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "image_with_text_ddnkaz": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_3jKW8B": {
+          "type": "text",
+          "settings": {
+            "text": "<p>そして、ソフトな風合いと美しい光沢感があり、吸湿性と速乾性に優れたテンセル(リヨセル)。<br/>「世界で最も環境に優しい製法でつくられた繊維」とも言われ、サスティナブルな素材として知られています。 この２つの素材の中から更により良い生地を厳選し、使用しています。</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "text_3jKW8B"
+      ],
+      "custom_css": [
+        ".image-with-text__media {border: none;}",
+        "img {width: 100%; height: auto; object-fit: cover;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/about_3s.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 40,
+        "padding_bottom": 20
+      }
+    },
+    "image_with_text_jxCTeJ": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_K3Vtxd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>シャツのプリントは、複雑な柄を美しく表現するために、 国内の染工場で「手捺染」と呼ばれる技法を用いて染め上げられます。<br/>沖縄の職人さんによる手縫いで1点1点縫製することによって完成し、 あなたの元へお届けします。</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "text_K3Vtxd"
+      ],
+      "custom_css": [
+        ".image-with-text__media {border: none;}",
+        "img {width: 100%; height: auto; object-fit: cover;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/about_4s.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 20,
+        "padding_bottom": 80
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_i6QJD4",
+    "image_with_text_hGy6CM",
+    "image_with_text_rXEXNE",
+    "image_banner_qigTmP",
+    "image_with_text_ddnkaz",
+    "image_with_text_jxCTeJ"
+  ]
+}

@@ -1,0 +1,233 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        "h1 {font-size: 3rem;}",
+        "@media only screen and (min-width: 750px) {h1 {font-size: 4rem; }}"
+      ],
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_CdfjCP": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fhT6b7": {
+          "type": "heading",
+          "settings": {
+            "heading": "LOOK BOOK",
+            "heading_size": "h1"
+          }
+        },
+        "text_QbwD7E": {
+          "type": "text",
+          "settings": {
+            "text": "<p>2024年　春夏の新作紹介✨</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_fhT6b7",
+        "text_QbwD7E"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "collage_RmkyED": {
+      "type": "collage",
+      "blocks": {
+        "image_VE34iT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/lookbook_3s.png"
+          }
+        },
+        "image_hYzWgL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/lookbook_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_VE34iT",
+        "image_hYzWgL"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "desktop_layout": "right",
+        "mobile_layout": "collage",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collage_Fzgpdd": {
+      "type": "collage",
+      "blocks": {
+        "image_WYxVGf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/lookbook_2.png"
+          }
+        },
+        "image_CAbYLK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/lookbook_4s.png"
+          }
+        },
+        "image_r9nBhz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/lookbook_1s.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_WYxVGf",
+        "image_CAbYLK",
+        "image_r9nBhz"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collage_wL4FWF": {
+      "type": "collage",
+      "blocks": {
+        "image_jWefTC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/lookbook_4s.png"
+          }
+        },
+        "image_k7LLpk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/lookbook_7m.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_jWefTC",
+        "image_k7LLpk"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collage_cjGR6g": {
+      "type": "collage",
+      "blocks": {
+        "image_nB4bzb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/lookbook-9.png"
+          }
+        },
+        "image_68fXAj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/lookbook_5s.png"
+          }
+        },
+        "image_xEy9yn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/lookbook_2s.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_nB4bzb",
+        "image_68fXAj",
+        "image_xEy9yn"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collage_KkTdRr": {
+      "type": "collage",
+      "blocks": {
+        "image_KRUPpt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/lookbook_6s.png"
+          }
+        },
+        "image_kBxUQb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/lookbook_7.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_KRUPpt",
+        "image_kBxUQb"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "desktop_layout": "right",
+        "mobile_layout": "collage",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_CdfjCP",
+    "collage_RmkyED",
+    "collage_Fzgpdd",
+    "collage_wL4FWF",
+    "collage_cjGR6g",
+    "collage_KkTdRr"
+  ]
+}

@@ -1,0 +1,281 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "judge_me_reviews_preview_badge_JeBDEd": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "popup_Lpgq3f": {
+          "type": "popup",
+          "settings": {
+            "text": "サイズ表",
+            "page": "size"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "text_FBpYpt": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>{{ product.metafields.custom.theme_message.value }}</strong>",
+            "text_style": "body"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "collapsible_tab_3ht3gG": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "素材",
+            "icon": "shirt",
+            "content": "<p>セルロース100%<br/>※商品写真はできる限り実物の色に近づけるよう加工しておりますが、お客様のお使いのモニター設定、お部屋の照明等により実際の商品と色味が異なる場合がございます。<br/>※生地の染めは1点1点職人さんの手作業で行うため、機械のように完璧ではなく僅かに色ムラがございます。それも味と感じていただけたら幸いです。</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_zgeKGK": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "お届け時期",
+            "icon": "stopwatch",
+            "content": "<p>お支払いの確認後4~6日以内</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_CnzkLw": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "送料",
+            "icon": "truck",
+            "content": "<p>全国一律500円<br/>※日本国内発送に限り、35,000円以上のお買上げの方は送料無料</p>",
+            "page": ""
+          }
+        },
+        "complementary_wyNqDg": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "一緒に購入する",
+            "make_collapsible_row": true,
+            "icon": "price_tag",
+            "product_list_limit": 10,
+            "products_per_page": 3,
+            "pagination_style": "counter",
+            "image_ratio": "square",
+            "enable_quick_add": true
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_JeBDEd",
+        "price",
+        "variant_picker",
+        "popup_Lpgq3f",
+        "quantity_selector",
+        "buy_buttons",
+        "text_FBpYpt",
+        "description",
+        "collapsible_tab_3ht3gG",
+        "collapsible_tab_zgeKGK",
+        "collapsible_tab_CnzkLw",
+        "complementary_wyNqDg",
+        "share"
+      ],
+      "custom_css": [
+        ".gradient {background-color: rgba(0, 176, 176, 0.04);}"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "custom_css": [
+        ".gradient {background-color: rgba(0, 176, 176, 0.04);}",
+        ".h2 {color: #00b0b0; font-family: Lobster; font-weight: 700; letter-spacing: 3.2px;}",
+        ".label {font-size: 14px; letter-spacing: 1.4px;}"
+      ],
+      "settings": {
+        "heading": "Recommend<span class=\"label\">/あなたへのおすすめ</span>",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "multicolumn_wFDLgp": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_eicmcp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Tradition-s.png",
+            "title": "",
+            "text": "",
+            "link_label": "テーマから選ぶ",
+            "link": "shopify://collections/traditional"
+          }
+        },
+        "column_papHTi": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Playing-s.png",
+            "title": "",
+            "text": "",
+            "link_label": "テーマから選ぶ",
+            "link": "shopify://collections/playing"
+          }
+        },
+        "column_kHKGT9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Travel-s.png",
+            "title": "",
+            "text": "",
+            "link_label": "テーマから選ぶ",
+            "link": "shopify://collections/travel"
+          }
+        },
+        "column_9EDHEi": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Nature-s.png",
+            "title": "",
+            "text": "",
+            "link_label": "テーマから選ぶ",
+            "link": "shopify://collections/nature"
+          }
+        },
+        "column_UznyFa": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Life-s.png",
+            "title": "",
+            "text": "",
+            "link_label": "テーマから選ぶ",
+            "link": "shopify://collections/life"
+          }
+        }
+      },
+      "block_order": [
+        "column_eicmcp",
+        "column_papHTi",
+        "column_kHKGT9",
+        "column_9EDHEi",
+        "column_UznyFa"
+      ],
+      "custom_css": [
+        ".gradient {background-color: rgba(0, 176, 176, 0.04);}",
+        ".h2 {color: #00b0b0; font-family: Lobster; font-weight: 700; letter-spacing: 3.2px;}",
+        ".label {font-size: 14px; letter-spacing: 1.4px;}"
+      ],
+      "settings": {
+        "title": "Theme<span class=\"label\">/テーマから選ぶ</span>",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 5,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "ボタンのラベル",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1720806050cd332dee": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_nPWP9G": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_nPWP9G"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products",
+    "multicolumn_wFDLgp",
+    "1720806050cd332dee"
+  ]
+}

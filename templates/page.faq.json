@@ -1,0 +1,317 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        "h1 {font-size: 3rem;}",
+        "@media only screen and (min-width: 750px) {h1 {font-size: 4rem; }}"
+      ],
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_banner_3jdRgP": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_GXDMej": {
+          "type": "heading",
+          "settings": {
+            "heading": "よくある質問",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GXDMej"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/faq_fv.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "collapsible_content_3KMtTq": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_YEnNwJ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "会員登録はどこからできますか？",
+            "icon": "check_mark",
+            "row_content": "<p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_NhTfpT": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "ログインができません",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_6Whck9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "パスワードを忘れてしまいました",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_tQ748X": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "メールマガジンを停止したいです",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_YEnNwJ",
+        "collapsible_row_NhTfpT",
+        "collapsible_row_6Whck9",
+        "collapsible_row_tQ748X"
+      ],
+      "custom_css": [
+        "h2 {padding: 1rem 2rem; background: #00b0b0; color: #fff;}"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "会員登録・アカウントについて",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 80,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_6qNVpa": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_YYYcaX": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "注文内容は確認できますか？",
+            "icon": "check_mark",
+            "row_content": "<p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_ymrTDt": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "注文後に内容の変更・キャンセルはできますか？",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_efhUhm": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "注文後に配送先（住所、名前など）の変更はできますか？",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_DBwyyt": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "配送先住所を間違えてしまいました。",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_YYYcaX",
+        "collapsible_row_ymrTDt",
+        "collapsible_row_efhUhm",
+        "collapsible_row_DBwyyt"
+      ],
+      "custom_css": [
+        "h2 {padding: 1rem 2rem; background: #00b0b0; color: #fff;}"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "ご注文について",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_wPXxPi": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_AMAjDX": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "注文からどれくらいで商品が届きますか？",
+            "icon": "check_mark",
+            "row_content": "<p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_98CRCE": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "日時指定はできますか？",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_C9N9Jb": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "送料はかかりますか？",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_tUetUd": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "配送業者の指定は出来ますか？",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_AMAjDX",
+        "collapsible_row_98CRCE",
+        "collapsible_row_C9N9Jb",
+        "collapsible_row_tUetUd"
+      ],
+      "custom_css": [
+        "h2 {padding: 1rem 2rem; background: #00b0b0; color: #fff;}"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "商品の配送について",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_9zaRxi": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_JPwmbX": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "商品の返品、交換は可能ですか？",
+            "icon": "check_mark",
+            "row_content": "<p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_3r74FN": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "領収書は発行できますか？",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_RmPEyf": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "クーポンは利用できますか？",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_UbmWfE": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "ギフト包装はできますか？",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_JPwmbX",
+        "collapsible_row_3r74FN",
+        "collapsible_row_RmPEyf",
+        "collapsible_row_UbmWfE"
+      ],
+      "custom_css": [
+        "h2 {padding: 1rem 2rem; background: #00b0b0; color: #fff;}"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "その他",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_3jdRgP",
+    "collapsible_content_3KMtTq",
+    "collapsible_content_6qNVpa",
+    "collapsible_content_wPXxPi",
+    "collapsible_content_9zaRxi"
+  ]
+}
