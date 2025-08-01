@@ -1,7 +1,11 @@
 {{ 'custom-news.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
-  .section-{{ section.id }}-padding {
+  .c-news .c-news-link__label.is-news {
+    background-color: {{ section.settings.news_tag_color }};
+  }
+  .section-{{ section.id }}
+  -padding {
     padding-top: {{ section.settings.padding_top_sp }}px;
     padding-bottom: {{ section.settings.padding_bottom_sp }}px;
   }
@@ -13,43 +17,62 @@
   }
 {%- endstyle -%}
 
+{% assign blog = section.settings.news_blog %}
+
 <div class="color-{{ section.settings.color_scheme }} gradient">
-  <div class="section-{{ section.id }}-padding c-news__inner">
-    <h2 class="c-news__title">NEWS</h2>
+  <div class="page-width section-{{ section.id }}-padding c-news__inner">
+    <h2 class="c-news__title">{{ section.settings.title }}</h2>
     <div class="c-news__card">
 
       <div class="c-news__lists">
-        <a href="" class="c-news__list c-news-link">
-          <div class="c-news-link__meta">
-            <time class="c-news-link__date" datetime="2025-1-29">2025年1月10日</time>
-            <div class="c-news-link__label">お知らせ</div>
-          </div>
-          <h3 class="c-news-link__title">Eanbe Demo ストアがオープンしました。</h3>
-        </a>
+        {% for article in blog.articles limit: section.settings.article_limit %}
+          <a href="{{ article.url }}" class="c-news__list c-news-link">
+            <div class="c-news-link__meta">
+              <time class="c-news-link__date" datetime="{{ article.published_at }}">{{ article.published_at | date: "%Y年%m月%d日" }}</time>
 
-        <a href="" class="c-news__list c-news-link">
-          <div class="c-news-link__meta">
-            <time class="c-news-link__date" datetime="2025-1-29">2025年1月10日</time>
-            <div class="c-news-link__label">お知らせ</div>
-          </div>
-          <h3 class="c-news-link__title">Eanbe Demo ストアがオープンしました。</h3>
-        </a>
-
-        <a href="" class="c-news__list c-news-link">
-          <div class="c-news-link__meta">
-            <time class="c-news-link__date" datetime="2025-1-29">2025年1月10日</time>
-            <div class="c-news-link__label">お知らせ</div>
-          </div>
-          <h3 class="c-news-link__title">Eanbe Demo ストアがオープンしました。</h3>
-        </a>
+              {% if article.tags.size == 1 %}
+                {% for tag in article.tags %}
+                  {% if tag contains 'news' or tag contains 'column' or tag contains 'event' %}
+                    <div class="c-news-link__label is-{{ tag | split: '_' | first }}">
+                      {{ tag | split: '_' | last }}
+                    </div>
+                  {% else %}
+                    <div class="c-news-link__label">
+                      {{ tag }}
+                    </div>
+                  {% endif %}
+                {% endfor %}
+              {% else %}
+                {% comment %} タグが一個以外（2個以上だったら） {% endcomment %}
+                <div class="c-news-link__label">
+                  お知らせ
+                </div>
+              {% endif %}
+            </div>
+            <h3 class="c-news-link__title js-trim-title ">{{ article.title | truncate: 23, '...' }}</h3>
+          </a>
+        {% endfor %}
 
       </div>
       <div class="c-news__link">
-        <a href="">もっとみる</a>
+        <a href="{{ blog.url }}">もっとみる</a>
       </div>
     </div>
   </div>
 </div>
+
+{% comment %} <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  const titles = document.querySelectorAll(".js-trim-title");
+                  titles.forEach((e) => {
+                    const maxLength = 10;
+                    const original = e.textContent.trim();
+                    if (original.length > maxLength) {
+                      e.textContent = original.slice(0, maxLength) + '...';
+                    }
+                  });
+                });
+</script> {% endcomment %}
 
 
 {% schema %}
@@ -59,16 +82,45 @@
     "class": "section custom-section c-news",
     "settings": [
       {
+        "type": "header",
+        "content": "NEWSセクションの設定"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "見出し",
+        "default": "NEWS"
+      },
+      {
+        "type": "range",
+        "id": "article_limit",
+        "min": 1,
+        "max": 20,
+        "step": 1,
+        "unit": "件",
+        "label": "表示件数",
+        "default": 3
+      },
+      {
+        "type": "color",
+        "id": "news_tag_color",
+        "label": "NEWSタグの色",
+        "default": "#000000",
+        "info": "NEWSタグの色を設定します。"
+      }, {
+        "type": "blog",
+        "id": "news_blog",
+        "label": "ブログ",
+        "info": "Newsのブログを選んでください"
+      }, {
         "type": "color_scheme",
         "id": "color_scheme",
         "label": "t:sections.all.colors.label",
         "default": "scheme-1"
-      },
-      {
+      }, {
         "type": "header",
         "content": "t:sections.all.padding.section_padding_heading"
-      },
-      {
+      }, {
         "type": "range",
         "id": "padding_top_pc",
         "min": 0,
@@ -77,8 +129,7 @@
         "unit": "px",
         "label": "t:sections.all.padding.padding_top",
         "default": 40
-      },
-      {
+      }, {
         "type": "range",
         "id": "padding_bottom_pc",
         "min": 0,

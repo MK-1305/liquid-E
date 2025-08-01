@@ -1,0 +1,45 @@
+{% assign article = articles[block.settings.article] %}
+<a href="{{ article.url }}" class="c-news__list c-news-link">
+  <div class="c-news-link__meta">
+    <time class="c-news-link__date" datetime="{{ article.published_at }}">{{ article.published_at | date: "%Y年%m月%d日" }}</time>
+
+    {% if article.tags.size == 1 %}
+      {% for tag in article.tags %}
+        {% if tag contains 'news' or tag contains 'column' or tag contains 'event' %}
+          <div class="c-news-link__label is-{{ tag | split: '_' | first }}">
+            {{ tag | split: '_' | last }}
+          </div>
+        {% else %}
+          <div class="c-news-link__label">
+            {{ tag }}
+          </div>
+        {% endif %}
+      {% endfor %}
+    {% elsif article != blank %}
+      <div class="c-news-link__label">
+        お知らせ
+      </div>
+    {% endif %}
+
+  </div>
+  <h3 class="c-news-link__title">{{ article.title }}</h3>
+</a>
+
+{% schema %}
+  {
+    "name": "NEWS TOP記事",
+    "settings": [
+      {
+        "type": "article",
+        "id": "article",
+        "label": "記事を選択"
+      }
+    ],
+    "presets": [
+      {
+        "name": "NEWS TOP記事"
+      }
+
+    ]
+  }
+{% endschema %}
