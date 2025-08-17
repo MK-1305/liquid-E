@@ -543,5 +543,10 @@
         "pay_now_button_label": "注文を確定する"
       }
     }
+  },
+  "custom": {
+    "label": {
+      "ranking": "No."
+    }
   }
 }
