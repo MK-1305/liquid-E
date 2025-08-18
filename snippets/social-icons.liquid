@@ -5,11 +5,19 @@
 
   Usage:
   {% render 'social-icons',
-    class: 'my-class'
+  class: 'my-class'
   %}
 {% endcomment %}
 
 <ul class="list-unstyled list-social{% if class %} {{ class}}{% endif %}" role="list">
+  {%- if settings.social_line_link != blank -%}
+    <li class="list-social__item">
+      <a href="{{ settings.social_line_link }}" class="link list-social__link">
+        {%- render 'icon-line' -%}
+        <span class="visually-hidden">{{ 'custom.social_links.line' | t }}</span>
+      </a>
+    </li>
+  {%- endif -%}
   {%- if settings.social_facebook_link != blank -%}
     <li class="list-social__item">
       <a href="{{ settings.social_facebook_link }}" class="link list-social__link">

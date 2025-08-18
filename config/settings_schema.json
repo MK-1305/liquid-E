@@ -145,6 +145,16 @@
         "unit": "%",
         "label": "t:settings_schema.typography.settings.body_scale.label",
         "default": 100
+      },
+      {
+        "type": "header",
+        "content": "カスタムフォント"
+      },
+      {
+        "type": "font_picker",
+        "id": "type_custom_font",
+        "default": "assistant_n4",
+        "label": "カスタムフォントを選んでください",
       }
     ]
   },
@@ -1308,6 +1318,12 @@
       {
         "type": "header",
         "content": "t:settings_schema.social-media.settings.header.content"
+      },
+      {
+        "type": "text",
+        "id": "social_line_link",
+        "label": "LINE",
+        "placeholder": "https://line.me/ti/p/your-line-id"
       },
       {
         "type": "text",

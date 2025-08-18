@@ -556,6 +556,9 @@
       "birthday_month_11": "November",
       "birthday_month_12": "December",
       "accepts_marketing": "Recieve coupons and special offers by email during your birthday month"
+    },
+      "social_links": {
+        "line": "LINE"
+      }
     }
-  }
 }

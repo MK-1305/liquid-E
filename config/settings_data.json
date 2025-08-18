@@ -16,6 +16,7 @@
     "heading_scale": 100,
     "type_body_font": "noto_sans_japanese_n4",
     "body_scale": 100,
+    "type_custom_font": "raleway_n4",
     "page_width": 1200,
     "spacing_sections": 0,
     "spacing_grid_horizontal": 8,
@@ -110,6 +111,7 @@
     "brand_headline": "",
     "brand_description": "<p></p>",
     "brand_image_width": 100,
+    "social_line_link": "#",
     "social_facebook_link": "",
     "social_instagram_link": "",
     "social_youtube_link": "",
@@ -128,6 +130,7 @@
     "show_cart_note": false,
     "cart_drawer_collection": "",
     "cart_color_scheme": "scheme-1",
+    "social_line_line": "#",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
