@@ -565,6 +565,9 @@
       "birthday_month_11": "11月",
       "birthday_month_12": "12月",
       "accepts_marketing": "誕生月にクーポンや特典のメールを受け取る"
+    },
+      "social_links": {
+        "line": "LINE"
+      }
     }
-  }
 }
