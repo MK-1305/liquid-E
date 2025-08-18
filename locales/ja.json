@@ -547,6 +547,24 @@
   "custom": {
     "label": {
       "ranking": "No."
+    },
+    "register": {
+      "birthday": "誕生日",
+      "birthday_month": "誕生月",
+      "birthday_month_placeholder": "誕生月を選択してください",
+      "birthday_month_1": "1月",
+      "birthday_month_2": "2月",
+      "birthday_month_3": "3月",
+      "birthday_month_4": "4月",
+      "birthday_month_5": "5月",
+      "birthday_month_6": "6月",
+      "birthday_month_7": "7月",
+      "birthday_month_8": "8月",
+      "birthday_month_9": "9月",
+      "birthday_month_10": "10月",
+      "birthday_month_11": "11月",
+      "birthday_month_12": "12月",
+      "accepts_marketing": "誕生月にクーポンや特典のメールを受け取る"
     }
   }
 }
