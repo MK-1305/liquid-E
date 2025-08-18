@@ -538,6 +538,24 @@
   "custom": {
     "label": {
       "ranking": "No."
+    },
+    "register": {
+      "birthday": "Birthday",
+      "birthday_month": "Birthday month",
+      "birthday_month_placeholder": "Please select your birthday month",
+      "birthday_month_1": "January",
+      "birthday_month_2": "February",
+      "birthday_month_3": "March",
+      "birthday_month_4": "April",
+      "birthday_month_5": "May",
+      "birthday_month_6": "June",
+      "birthday_month_7": "July",
+      "birthday_month_8": "August",
+      "birthday_month_9": "September",
+      "birthday_month_10": "October",
+      "birthday_month_11": "November",
+      "birthday_month_12": "December",
+      "accepts_marketing": "Recieve coupons and special offers by email during your birthday month"
     }
   }
 }
