@@ -377,6 +377,9 @@ body {
       class="content-for-layout focus-none"
       role="main"
       tabindex="-1">
+      <div class="page-width">
+        {% render 'breadcrumb' %}
+      </div>
       {{ content_for_layout }}
     </main>
 
