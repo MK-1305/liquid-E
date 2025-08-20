@@ -9,6 +9,22 @@
  */
 {
   "sections": {
+    "c_search_KxLEex": {
+      "type": "c_search",
+      "name": "サジェスト検索",
+      "settings": {
+        "tags_list": "test",
+        "color": "#000000",
+        "bk_color": "#ffffff",
+        "hover_color": "#ffffff",
+        "hover_bk_color": "#000000",
+        "radius": 4,
+        "hover_opacity": 0.6,
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "custom_news_7Yr3k4": {
       "type": "custom-news",
       "name": "NEWSセクション",
@@ -499,6 +515,7 @@
     }
   },
   "order": [
+    "c_search_KxLEex",
     "custom_news_7Yr3k4",
     "slideshow_Ld4cH9",
     "multicolumn_m7nMFm",
