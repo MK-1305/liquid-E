@@ -15,6 +15,19 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  .cart__check {   
+  display: none;       
+  background-color: #fff8e1;   
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  border: 1px solid #ffd54f;
+  }
+
+  .cart__check.is-active { 
+  display: block;
+  }
 {%- endstyle -%}
 
 <div
@@ -106,6 +119,10 @@
                 </small>
               </div>
             {%- else -%}
+            <div class="cart__check">
+              <input type="checkbox" id="cart_check">
+              <label for="cart_check">特定の商品が含まれていますが、お間違いありませんか？</label>
+            </div>
               <div class="cart__ctas" {{ block.shopify_attributes }}>
                 <button
                   type="submit"
@@ -186,35 +203,78 @@
 {% endschema %}
 
 <script>
-
   function updateFreeShippingMessage() {
-    // 送料無料ライン（ここを管理画面やLiquid変数にしてもOK）
-    const FREE_SHIPPING = 30000;
+    const FREE_SHIPPING = 30000; // 送料無料ライン（円）
     fetch('/cart.js')
-      .then(response => response.json())
+      .then(r => r.json())
       .then(cart => {
-        const cartTotal = cart.total_price / 100;
+        const cartTotal = (cart.total_price || 0) / 100;
         const amountLeft = FREE_SHIPPING - cartTotal;
-        const messageArea = document.getElementById('free-shipping-message');
-        if (!messageArea) return;
-        if (amountLeft > 0) {
-          messageArea.innerHTML = `あと${amountLeft.toLocaleString()}円で送料無料！`;
-        } else {
-          messageArea.innerHTML = `送料無料です！`;
-        }
-      });
+        const el = document.getElementById('free-shipping-message');
+        if (!el) return;
+        el.textContent = amountLeft > 0
+          ? `あと${amountLeft.toLocaleString()}円で送料無料！`
+          : '送料無料です！';
+      })
+      .catch(() => {});
   }
 
-updateFreeShippingMessage();
+  function updateSpecialTypeCheck() {
+    const SPECIAL_PRODUCT_TYPES = {
+      '酒類': '※酒類が含まれています。20歳以上であることをご確認ください。',
+      '医薬品': '※医薬品が含まれています。使用上の注意をご確認ください。'
+    };
 
-// カートfooter監視（Ajaxカート対応）
+    const cartCheckDiv   = document.querySelector('.cart__check');
+    const cartCheckInput = document.getElementById('cart_check');
+    const cartCheckLabel = cartCheckDiv ? cartCheckDiv.querySelector('label') : null;
+    const checkoutBtn    = document.getElementById('checkout');
+
+    if (!cartCheckDiv || !cartCheckInput || !cartCheckLabel || !checkoutBtn) return;
+
+    fetch('/cart.js')
+      .then(r => r.json())
+      .then(cart => {
+        const foundProductTypes = new Set();
+        for (const item of cart.items || []) {
+          const type = item.product_type || '';
+          if (SPECIAL_PRODUCT_TYPES[type]) foundProductTypes.add(type);
+        }
+
+        if (foundProductTypes.size > 0) {
+          const messages = Array.from(foundProductTypes).map(t => SPECIAL_PRODUCT_TYPES[t]);
+          cartCheckLabel.innerHTML =
+            `以下の商品が含まれていますが、お間違いありませんか？<br>${messages.join('<br>')}`;
+
+          cartCheckDiv.classList.add('is-active');
+          if (!cartCheckInput.checked) checkoutBtn.disabled = true;
+
+          // 毎回監視で呼ばれても問題ないように、イベントを付け直し
+          cartCheckInput.onchange = () => {
+            checkoutBtn.disabled = !cartCheckInput.checked;
+          };
+        } else {
+          cartCheckDiv.classList.remove('is-active');
+          cartCheckInput.checked = false;
+          checkoutBtn.disabled = false;
+          cartCheckInput.onchange = null;
+        }
+      })
+      .catch(() => {});
+  }
+
+  // 初回実行
+  updateFreeShippingMessage();
+  updateSpecialTypeCheck();
+
+  // Ajaxカート等でDOMが差し替わっても再実行
   const cartFooter = document.getElementById('main-cart-footer');
   if (cartFooter) {
     const observer = new MutationObserver(() => {
-      // カートの内容（main-cart-footer）が更新されたら送料無料メッセージを再計算
       updateFreeShippingMessage();
+      updateSpecialTypeCheck();
     });
     observer.observe(cartFooter, { childList: true, subtree: true });
   }
-
 </script>
+
