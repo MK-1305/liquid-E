@@ -1,0 +1,16 @@
+{
+  "name": "liquid-e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sync": "node sync-restock-date.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "node-fetch": "^3.3.2"
+  }
+}
