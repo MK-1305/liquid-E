@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^17.2.1",
-    "node-fetch": "^3.3.2"
+    "dotenv": "^17.2.1"
   }
 }
